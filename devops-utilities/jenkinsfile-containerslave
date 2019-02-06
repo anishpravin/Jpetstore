@@ -1,0 +1,15 @@
+node  
+{
+    stage('Checkout') {
+				
+				sh '''git --version'''
+				checkout scm
+			          }
+			
+
+
+    stage('maven build step') {
+				
+				sh '''mvn -version'''
+				              }
+}
